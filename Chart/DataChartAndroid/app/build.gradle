@@ -1,0 +1,54 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.example.datachartandroid"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //下拉刷新
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+    //分享模块
+    implementation 'com.flipboard:bottomsheet-core:1.5.1'
+    implementation 'com.flipboard:bottomsheet-commons:1.5.1'
+    //用户列表 拼音
+    implementation 'com.belerweb:pinyin4j:2.5.1'
+    compile files('libs/achartengine-1.0.0.jar')
+    //MPChart  PS:注意——添加了这个依赖后还要在项目的build中添加一个依赖
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    //Mqtt
+    compile files('libs/org.eclipse.paho.client.mqttv3-1.0.2.jar')
+    compile files('libs/classes.jar')
+    compile files('libs/eventbus-3.0.0.jar')
+
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable  name="inputview">
+        <!--图片-->
+        <attr name="input_icon" format="reference"></attr>
+        <!--字体-->
+        <attr name="input_hint" format="string"></attr>
+        <!--是否密文-->
+        <attr name="is_pass" format="boolean"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable  name="nav">
+        <!--图片-->
+        <attr name="icon" format="reference"></attr>
+        <!--字体-->
+        <attr name="hint" format="string"></attr>
+        <!--是否密文-->
+        <attr name="pass" format="boolean"></attr>
+        <attr name="right_icon" format="reference"></attr>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="TickerView">
+        <attr name="ticker_animationDuration" format="reference|integer" />
+        <attr name="ticker_animateMeasurementChange" format="reference|boolean" />
+        <attr name="ticker_defaultCharacterList" format="enum">
+            <enum name="number" value="1" />
+            <enum name="alphabet" value="2" />
+        </attr>
+        <attr name="ticker_defaultPreferredScrollingDirection" format="enum">
+            <enum name="any" value="0" />
+            <enum name="up" value="1" />
+            <enum name="down" value="2" />
+        </attr>
+
+        <!-- Custom implementations of common android text attributes -->
+        <attr name="android:gravity" tools:ignore="ResourceName" />
+        <attr name="android:shadowColor" tools:ignore="ResourceName" />
+        <attr name="android:shadowDx" tools:ignore="ResourceName" />
+        <attr name="android:shadowDy" tools:ignore="ResourceName" />
+        <attr name="android:shadowRadius" tools:ignore="ResourceName" />
+        <attr name="android:text" tools:ignore="ResourceName" />
+        <attr name="android:textAppearance" tools:ignore="ResourceName" />
+        <attr name="android:textColor" tools:ignore="ResourceName" />
+        <attr name="android:textSize" tools:ignore="ResourceName" />
+        <attr name="android:textStyle" tools:ignore="ResourceName" />
+    </declare-styleable>
+
+
+
+    <!--家庭成员列表-->
+    <declare-styleable name="SideBar">
+        <attr name="scaleSize" format="integer"/>
+        <attr name="scaleItemCount" format="integer"/>
+        <attr name="scaleWidth" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CirCleProgressBar">
+        <attr name="circle_color" format="color"/>
+        <attr name="circle_bg_color" format="color"/>
+        <attr name="circle_width" format="dimension"/>
+        <attr name="circle_bg_width" format="dimension"/>
+        <attr name="text_color" format="color"/>
+        <attr name="text_size" format="dimension"/>
+        <attr name="total_angle" format="integer"/>
+        <attr name="start_angle" format="integer"/>
+        <attr name="current_progress" format="float"/>
+        <attr name="max_progress" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundIndicatorView">
+        <!--最大数值-->
+        <attr name="maxNum" format="integer"/>
+        <!--圆盘起始角度-->
+        <attr name="startAngle" format="integer"/>
+        <!--圆盘扫过的角度-->
+        <attr name="sweepAngle" format="integer"/>
+    </declare-styleable>
+</resources>

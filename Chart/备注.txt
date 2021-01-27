@@ -1,0 +1,8 @@
+没有设置跳转按钮 ，自行在AndroidMainfest.xml文件中修改启动的第一个页面
+MainActivity：一个以ListView为基础的时间轴
+MainActivity2：一个以ListView为基础的下拉刷新
+MainActivity3：分享模块
+MainActivity4：仪表盘，数字不同，仪表盘的指针、数字、背景颜色都会进行变化
+MainActivity5：实时曲线图（只实现了一条实时曲线）
+MainActivity6：按钮添加数据到曲线图中；实时曲线图（可以有多条曲线）
+MainActivity7：接收MQTT传来的数据并绘制实时曲线图（可以有多条曲线）
